@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
     Slider(i);
     hideDot();
     showDot(i);
-  }, 4000);
+  }, 17000);
 
   // AOS Library
   AOS.init();

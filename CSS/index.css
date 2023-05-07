@@ -30,8 +30,8 @@ body {
 
 :root {
   --nav-link-active-color: #1f1534;
-  --main-title-color: #000000;
-  --main-paragraph-color: #7d7987;
+  --main-title-color: #584f7c;
+  --main-paragraph-color: #342d46;
   --main-link-color: #ffffff;
   --main-link-bg-color: #458ff6;
 }
@@ -43,6 +43,15 @@ body {
   width: 100%;
 
 }
+.h1_sub {
+  font-size: 25px !important;
+  font-weight: normal !important;
+}
+
+.citacao {
+  font-style: italic !important;
+}
+
 
 .container-buttons-aulas {
   margin-top: 4rem;
@@ -395,7 +404,8 @@ body {
 }
 
 .main__box_paragraph {
-  max-width: 440px;
+  text-align: justify;
+  max-width: 65%;
   width: 100%;
   font-style: normal;
   font-weight: 300;
@@ -403,7 +413,7 @@ body {
   font-size: 21px;
   line-height: 32px;
   color: var(--main-paragraph-color);
-  margin: 25px 0 48px 0;
+  margin: 25px 0 25px 0;
 }
 
 .main__box_link {
@@ -438,20 +448,31 @@ body {
 
 /* ****MAIN END**** */
 
+
+/*Aula 22-03*/
+.img-22-03 {
+  width: 50%;
+}
+
+
 /* ****SECTION START**** */
 .section__content {
   text-align: center;
 }
 
 .section__content_title {
+  max-width: 65%;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   mix-blend-mode: normal;
   color: var(--main-title-color);
   position: relative;
-  margin: 0 0 61px 0;
+  margin: 0 0 25px 0;
+  text-align: center;
 }
+
+
 
 .section__content_title::after {
   content: "";
@@ -790,16 +811,17 @@ body {
   -ms-grid-columns: (auto);
   grid-template-columns: repeat(4, auto);
   overflow: hidden;
+  align-items: end;
 }
 
 .section__carousel {
+  gap: 3rem;
   width: 1000px !important;
-  height: 425px;
-  background: -o-linear-gradient(241.82deg, #67c3f3 9.05%, #5a98f2 76.74%);
-  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+height: 80%;
+  display: flex;
   border-radius: 24px;
-  padding: 61px 75px 92px 46px;
-  margin: 269px 0 0 0;
+  padding: 61px 75px 61px 46px;
+  margin: 50px 0 0 0;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -808,6 +830,23 @@ body {
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
+  align-items: center;
+}
+
+#indicacoes > div > div.section__carousel_big_container > div.section__carousel.raiva{
+  background: linear-gradient(0.25turn, #ED4529, #A78AC4);
+}
+#indicacoes > div > div.section__carousel_big_container > div.section__carousel.medo{
+  background: linear-gradient(0.25turn, #A78AC4, #59B8DD);
+}
+#indicacoes > div > div.section__carousel_big_container > div.section__carousel.tristeza{
+  background: linear-gradient(0.25turn, #59B8DD, #ECE669);
+}
+#indicacoes > div > div.section__carousel_big_container > div.section__carousel.alegria{
+  background: linear-gradient(0.25turn, #ECE669, #BBDF7C);
+}
+#indicacoes > div > div.section__carousel_big_container > div.section__carousel.nojinho{
+  background: linear-gradient(0.25turn, #BBDF7C, #ED4529);
 }
 
 .section__carousel_small_box {
@@ -859,9 +898,32 @@ body {
   gap: 30px;
 }
 
+.sinopse-container {
+  height: 300px;
+  /* gap: 2rem; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.sinopse-container p {
+  color: var(--main-link-color);
+  font-size: 18px;
+}
+
+.container-button-sinop {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  width: 300px;
+}
+
 .section__carousel_content_box_img {
-  border-radius: 50%;
-  border: 5px solid var(--main-link-color);
+
+  height: 300px;
+  border: 2px solid var(--main-link-color);
 }
 
 .section__carousel_content_box_title {
@@ -968,7 +1030,7 @@ body {
 
 .section__article_box {
   width: 326px;
-  height: 490px;
+  
   background: var(--main-link-color);
   -webkit-box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.7);
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.7);
@@ -1009,6 +1071,7 @@ body {
 }
 
 .section__article_box_img {
+  height: 240px;
   width: 326px;
   border-radius: 5% 5% 0 0;
 }
@@ -1105,6 +1168,11 @@ body {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+.sinopse-button {
+  background-color: var(--main-link-bg-color);
+  color: var(--main-link-color);
 }
 
 .section__small_box_link:hover {
