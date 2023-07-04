@@ -166,5 +166,10 @@ window.addEventListener("DOMContentLoaded", () => {
   toggleCreateAula("body > section:nth-child(12) > div.container-buttons-aulas > button", "body > section:nth-child(12) > div.container")
   toggleCreateAula("body > section:nth-child(13) > div.container-buttons-aulas > button", "body > section:nth-child(13) > div.container")
   toggleCreateAula("body > section:nth-child(14) > div.container-buttons-aulas > button", "body > section:nth-child(14) > div.container")
-
+  toggleCreateAula("body > section:nth-child(15) > div.container-buttons-aulas > button", "body > section:nth-child(15) > div.container")
+  toggleCreateAula("body > section:nth-child(16) > div.container-buttons-aulas > button", "body > section:nth-child(16) > div.container")
+  toggleCreateAula("body > section:nth-child(17) > div.container-buttons-aulas > button", "body > section:nth-child(17) > div.container")
+  toggleCreateAula("body > section:nth-child(18) > div.container-buttons-aulas > button", "body > section:nth-child(18) > div.container")
+  toggleCreateAula("body > section:nth-child(19) > div.container-buttons-aulas > button", "body > section:nth-child(19) > div.container")
+  toggleCreateAula("body > section:nth-child(20) > div.container-buttons-aulas > button", "body > section:nth-child(20) > div.container")
 });
